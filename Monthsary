@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary, mahal ko!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fdfbfb;
+            font-family: 'Arial', sans-serif;
+            color: #ff4081;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .photo {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            border-radius: 8px;
+            margin: 0 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .heart-container {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+            background-color: #ff4081;
+            margin: 0 auto;
+            transform: rotate(-45deg);
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 100px;
+            height: 90px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: #ff4081;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #282727;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Photo -->
+        <div class="photo" id="left-photo" style="background-image: url(photo\ 2.jpg);"></div>
+        <div class="photo" id="right-photo" style="background-image: url(photo\ left2.jpg);"></div>
+        
+        <!-- Heart Animation and Message -->
+        <div class="heart-container">
+            <div class="heart"></div>
+            <div class="message">
+                Happy Monthsary, mahal ko! Grabe, ang bilis talaga ng oras, no? Two months na pala tayo, and every single moment has been nothing short of amazing. I can’t even find the right words to express how grateful I am. You’ve brought so much meaning and joy into my life, and I feel incredibly lucky and blessed to have met you.
+                I know I haven’t been perfect, and I’m sorry for the times I’ve been immature, for making you cry, and for causing you to overthink. But I promise you, I’m committed to becoming a better person for you. I’ll do everything I can to make you feel happy, secure, and loved.<
+                When I look back at the memories we’ve made together, I can’t help but smile. We've shared so many unforgettable moments, and I can’t wait to create even more with you in the future. Sana tayo na talaga, walang mapapagod, walang magsasawa. Kahit anong mangyari, nandito lang ako, handang sumuporta at makinig sa lahat ng kwento, galit, breakdowns, at rants mo.
+                I’m so proud of the amazing person you are, even when I know you’re dealing with so much. Despite everything, you still manage to smile, care for everyone around you, and make sure they’re okay. I see that, mahal, and I’m always here for you. I understand you, and I’ll always be here to support you, no matter what.
+                You are my comfort, my peace, my joy—my everything. I think about you all the time, and I can’t wait for the day when we don’t have to rely on video calls anymore, when we can finally talk side by side. You’re already a part of my future plans, and I will keep working on myself to be worthy of you. I will always love you, and soon, our “soon” will finally be our reality.
+                I miss you so much, more than words can say. But just know that I’m here, loving you from wherever I am, until we can be together again. I love you so much mahal ko 😘💖
+            </div>
+        </div>
+        <audio id="background-audio" controls>
+            <source src="Love - Romantic Background Music For Videos and Films - by AShamaluevMusic.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Right Photo -->
+        <div class="photo" id="right-photo" style="background-image: url(photo\ 1.jpg);"></div>
+        <div class="photo" id="right-photo" style="background-image: url(photo\ right.jpg);"></div>
+    </div>
+   
+</body>
+</html>
